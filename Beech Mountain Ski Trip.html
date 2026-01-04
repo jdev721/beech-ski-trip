@@ -1,0 +1,560 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=yes">
+    <title>Beech Mountain Ski Trip - Mobile</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Arial, sans-serif;
+            background-color: #0f172a;
+            color: #f1f5f9;
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 100%;
+            padding: 1rem;
+            margin: 0 auto;
+        }
+
+        .slide {
+            background-color: #0f172a;
+            color: #f1f5f9;
+            padding: 1.5rem;
+            margin-bottom: 2rem;
+            border-radius: 8px;
+            border-left: 4px solid #38bdf8;
+        }
+
+        .slide.title-slide {
+            background: linear-gradient(135deg, #020617 0%, #0f172a 100%);
+            border-left: none;
+            text-align: center;
+            padding: 2rem 1.5rem;
+            margin-bottom: 1rem;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            font-weight: 700;
+            color: #38bdf8;
+            margin-bottom: 1rem;
+            line-height: 1.2;
+        }
+
+        h2 {
+            font-size: 1.75rem;
+            font-weight: 700;
+            color: #38bdf8;
+            margin-bottom: 1.5rem;
+        }
+
+        h3 {
+            font-size: 1.5rem;
+            font-weight: 600;
+            color: #38bdf8;
+            margin-bottom: 1rem;
+        }
+
+        h4 {
+            font-size: 1.25rem;
+            font-weight: 600;
+            color: #38bdf8;
+            margin-bottom: 0.75rem;
+        }
+
+        p {
+            font-size: 1rem;
+            margin-bottom: 1rem;
+            color: #cbd5e1;
+        }
+
+        .secondary {
+            color: #cbd5e1;
+        }
+
+        .muted {
+            color: #94a3b8;
+            font-size: 0.9rem;
+        }
+
+        ul, ol {
+            margin-left: 1.5rem;
+            margin-bottom: 1rem;
+        }
+
+        li {
+            margin-bottom: 0.75rem;
+            color: #cbd5e1;
+        }
+
+        .card {
+            background-color: #1e293b;
+            padding: 1.5rem;
+            border-radius: 6px;
+            margin-bottom: 1rem;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 1rem;
+            font-size: 0.95rem;
+        }
+
+        th, td {
+            padding: 0.75rem;
+            text-align: left;
+            border-bottom: 1px solid #334155;
+        }
+
+        th {
+            background-color: #1e293b;
+            color: #38bdf8;
+            font-weight: 600;
+        }
+
+        td {
+            color: #cbd5e1;
+        }
+
+        .highlight {
+            color: #fbbf24;
+            font-weight: 600;
+        }
+
+        .accent {
+            color: #38bdf8;
+            font-weight: 600;
+        }
+
+        a {
+            color: #38bdf8;
+            text-decoration: none;
+            border-bottom: 1px solid #38bdf8;
+        }
+
+        a:active {
+            color: #0284c7;
+        }
+
+        .page-number {
+            text-align: center;
+            color: #94a3b8;
+            font-size: 0.85rem;
+            margin-top: 2rem;
+            padding-top: 1rem;
+            border-top: 1px solid #334155;
+        }
+
+        .nav-buttons {
+            display: flex;
+            gap: 1rem;
+            margin-top: 2rem;
+            margin-bottom: 2rem;
+        }
+
+        .nav-buttons button {
+            flex: 1;
+            padding: 0.75rem 1rem;
+            background-color: #38bdf8;
+            color: #0f172a;
+            border: none;
+            border-radius: 4px;
+            font-size: 0.95rem;
+            font-weight: 600;
+            cursor: pointer;
+        }
+
+        .nav-buttons button:active {
+            background-color: #0284c7;
+        }
+
+        .emoji {
+            font-size: 1.2rem;
+        }
+
+        @media (max-width: 480px) {
+            h1 { font-size: 2rem; }
+            h2 { font-size: 1.5rem; }
+            h3 { font-size: 1.25rem; }
+            .slide { padding: 1.25rem; }
+            .card { padding: 1rem; }
+            table { font-size: 0.85rem; }
+            th, td { padding: 0.5rem; }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+
+        <!-- Slide 1: Title -->
+        <div class="slide title-slide">
+            <h1>BEECH MOUNTAIN SKI TRIP</h1>
+            <h2 style="color: #f1f5f9; font-size: 1.5rem; margin-bottom: 1.5rem;">January 29 – February 2, 2026</h2>
+            <p class="secondary" style="font-size: 1.1rem;">Family ski adventure for 3</p>
+            <p class="muted">Miami to North Carolina</p>
+            <img src="https://agi-prod-file-upload-public-main-use1.s3.amazonaws.com/4f69ac36-93e8-4b10-aa3c-cb55e3dd41c3" alt="Family ski adventure" style="width: 100%; max-width: 300px; border-radius: 8px; margin-top: 1.5rem;">
+            <div class="page-number">Slide 1 of 18</div>
+        </div>
+
+        <!-- Slide 2: Trip Overview -->
+        <div class="slide">
+            <h2>Trip Overview</h2>
+            <ul>
+                <li><span class="accent">Destination:</span> Beech Mountain Resort, Banner Elk, NC</li>
+                <li><span class="accent">Dates:</span> Thursday, Jan 29 – Sunday, Feb 2 (4 days) + Monday OFF</li>
+                <li><span class="accent">Travelers:</span> 2 adults + 1 teen (age 14)</li>
+                <li><span class="accent">Flight:</span> American Airlines, Miami (MIA) → Asheville (AVL), nonstop ~2.5 hours</li>
+                <li><span class="accent">Ski Days:</span> Friday (full) + Saturday (full) + Sunday (half-day)</li>
+                <li><span class="accent">Monday, Feb 3:</span> ☀️ Day off! Recovery day, no school/work</li>
+            </ul>
+            <div class="page-number">Slide 2 of 18</div>
+        </div>
+
+        <!-- Slide 3: Why Beech Mountain -->
+        <div class="slide">
+            <h2>Why Beech Mountain?</h2>
+            <div class="card">
+                <h4>✓ Shortest Flight from Miami</h4>
+                <p class="secondary">Just 2.5 hours nonstop on American Airlines</p>
+            </div>
+            <div class="card">
+                <h4>✓ Family-Friendly & Beginner-Focused</h4>
+                <p class="secondary">Excellent ski school, gentle green runs, tons of tubing options</p>
+            </div>
+            <div class="card">
+                <h4>✓ Good Snow Odds</h4>
+                <p class="secondary">January–February has highest snowfall + snowmaking backup</p>
+            </div>
+            <div class="card">
+                <h4>✓ Affordable & Close to Lodging</h4>
+                <p class="secondary">Hotels within 5–10 minutes of slopes; no 2+ hour drives</p>
+            </div>
+            <div class="card">
+                <h4><span class="emoji">⭐</span> Resort Rating: 78/100</h4>
+                <p class="secondary"><strong>5,506 ft elevation</strong> (highest in East), 17 runs, 100% snowmaking, pricing 20/20</p>
+            </div>
+            <div class="page-number">Slide 3 of 18</div>
+        </div>
+
+        <!-- Slide 4: Flights -->
+        <div class="slide">
+            <h2>Flights: American Airlines</h2>
+            <div class="card">
+                <h4>Thursday, January 29</h4>
+                <p class="secondary"><strong>Outbound:</strong> MIA 5:45 PM → AVL 8:15 PM (nonstop, 2.5 hrs)</p>
+                <p><strong>Cost:</strong> <span class="highlight">$960</span> (3 × $320)</p>
+                <p><a href="https://www.aa.com/en-us/flights-from-miami-to-asheville" target="_blank">Book on American Airlines</a></p>
+            </div>
+            <div class="card">
+                <h4>Sunday, February 2</h4>
+                <p class="secondary"><strong>Return:</strong> AVL 4:30 PM → MIA 7:00 PM (nonstop, 2.5 hrs)</p>
+                <p><strong>Cost:</strong> <span class="highlight">$960</span> (3 × $320)</p>
+            </div>
+            <div class="page-number">Slide 4 of 18</div>
+        </div>
+
+        <!-- Slide 5: Thursday Night Airport Hotel -->
+        <div class="slide">
+            <h2>Thursday Night: Stay Near Airport</h2>
+            <p class="secondary" style="font-style: italic;">Smart move for first-time snow drivers! Avoid night mountain driving.</p>
+            <div class="card">
+                <h4>Wingate by Wyndham Fletcher at AVL</h4>
+                <p class="secondary">0.4 miles from airport | Free 24/7 shuttle | Free breakfast</p>
+                <p><strong>Cost:</strong> <span class="highlight">$140–$160</span></p>
+                <p><a href="https://www.tripadvisor.com/Hotel_Review-g49049-d235368-Reviews-Wingate_by_Wyndham_Fletcher_at_Asheville_Airport-Fletcher_North_Carolina.html" target="_blank">View on TripAdvisor</a></p>
+            </div>
+            <div class="card">
+                <h4>Friday Morning Plan</h4>
+                <p class="secondary">🌅 Free breakfast → Pick up AWD SUV rental → Daylight drive to Beech (~1.5 hrs) → Arrive Beech ~10 AM for rentals & lessons</p>
+            </div>
+            <div class="page-number">Slide 5 of 18</div>
+        </div>
+
+        <!-- Slide 6: Main Hotel -->
+        <div class="slide">
+            <h2>Main Hotel: Beech Mountain Inns</h2>
+            <div class="card">
+                <h4>Best Western Mountain Lodge, Banner Elk</h4>
+                <ul>
+                    <li><strong>10 min to slopes</strong> | Free hot breakfast | Mountain views</li>
+                    <li>Direct booking: <a href="https://www.bannerelk.com/members/best-western-mountain-lodge/" target="_blank">bannerelk.com</a></li>
+                    <li><strong>3 nights (Fri–Sun):</strong> <span class="highlight">$900</span> ($300/night)</li>
+                </ul>
+            </div>
+            <div class="card">
+                <h4>Why This Location</h4>
+                <p class="secondary">Beech Mountain Inns not accepting reservations → Best Western is perfect alternative in Banner Elk with great breakfast & value</p>
+                <p><strong>Note:</strong> Still close enough for easy ski access with shuttle/short drive</p>
+            </div>
+            <div class="page-number">Slide 6 of 18</div>
+        </div>
+
+        <!-- Slide 7: Ski Rentals & Lift Tickets -->
+        <div class="slide">
+            <h2>Ski Rentals & Lift Tickets</h2>
+            <div class="card">
+                <h4>Ski Rentals (3 days)</h4>
+                <p class="secondary">Skis, boots, poles, helmet × 3 people</p>
+                <p><strong>Cost:</strong> <span class="highlight">$180</span> ($60 per person)</p>
+            </div>
+            <div class="card">
+                <h4>Lift Tickets (Multi-day)</h4>
+                <table>
+                    <tr>
+                        <th>Person</th>
+                        <th>Rate</th>
+                        <th>3 Days</th>
+                    </tr>
+                    <tr>
+                        <td>2 Adults</td>
+                        <td>$92/day</td>
+                        <td>$552</td>
+                    </tr>
+                    <tr>
+                        <td>Teen (14)</td>
+                        <td>$70/day</td>
+                        <td>$210</td>
+                    </tr>
+                    <tr style="border-top: 2px solid #38bdf8;">
+                        <td colspan="2"><strong>Total</strong></td>
+                        <td style="color: #fbbf24; font-weight: 600;">$762</td>
+                    </tr>
+                </table>
+            </div>
+            <div class="page-number">Slide 7 of 18</div>
+        </div>
+
+        <!-- Slide 8: Lessons & Tubing -->
+        <div class="slide">
+            <h2>Ski School Lessons & Tubing</h2>
+            <div class="card">
+                <h4>Friday Morning Group Lesson</h4>
+                <ul>
+                    <li><strong>Who:</strong> All 3 of you (family group)</li>
+                    <li><strong>Time:</strong> 10:00 AM – 12:30 PM (2.5 hrs)</li>
+                    <li><strong>Focus:</strong> Beginner skills, balance, stopping</li>
+                </ul>
+                <p><strong>Cost:</strong> <span class="highlight">$84</span> (2 adults; teen free)</p>
+                <p><a href="https://www.beechmountainresort.com/lessons/ski-school/" target="_blank">Book Ski School</a></p>
+            </div>
+            <div class="card">
+                <h4>Saturday Evening: Snow Tubing</h4>
+                <ul>
+                    <li><strong>Location:</strong> Hawksnest Tubing Park (10 min from hotel)</li>
+                    <li><strong>Time:</strong> 6:00 PM – 8:00 PM (pre-book)</li>
+                    <li><strong>All family members qualify</strong></li>
+                </ul>
+                <p><strong>Cost:</strong> <span class="highlight">$105</span> (3 × $35)</p>
+                <p><a href="https://hawksnesttubing.com" target="_blank">Book at Hawksnest</a></p>
+            </div>
+            <div class="page-number">Slide 8 of 18</div>
+        </div>
+
+        <!-- Slide 9: Cost Summary -->
+        <div class="slide">
+            <h2>Total Trip Cost Breakdown</h2>
+            <table>
+                <tr>
+                    <th>Item</th>
+                    <th style="text-align: right;">Cost</th>
+                </tr>
+                <tr>
+                    <td>Flights (roundtrip, AA)</td>
+                    <td style="text-align: right;">$1,920</td>
+                </tr>
+                <tr>
+                    <td>Airport Hotel (Thu night)</td>
+                    <td style="text-align: right;">$150</td>
+                </tr>
+                <tr>
+                    <td>Best Western Mountain Lodge (3 nights)</td>
+                    <td style="text-align: right;">$900</td>
+                </tr>
+                <tr>
+                    <td>Ski Rentals (3 days)</td>
+                    <td style="text-align: right;">$180</td>
+                </tr>
+                <tr>
+                    <td>Lift Tickets (Fri–Sun)</td>
+                    <td style="text-align: right;">$762</td>
+                </tr>
+                <tr>
+                    <td>Lessons + Tubing</td>
+                    <td style="text-align: right;">$189</td>
+                </tr>
+                <tr>
+                    <td>Meals & Misc</td>
+                    <td style="text-align: right;">$500</td>
+                </tr>
+                <tr style="border-top: 2px solid #38bdf8; font-size: 1.1rem; font-weight: 600;">
+                    <td>TOTAL</td>
+                    <td style="text-align: right; color: #fbbf24;">$4,601</td>
+                </tr>
+            </table>
+            <p class="muted" style="margin-top: 1rem;"><strong>Includes:</strong> All flights, lodging, equipment, lessons, tubing, meals</p>
+            <div class="page-number">Slide 9 of 18</div>
+        </div>
+
+        <!-- Slide 10-13: Day-by-Day Itinerary -->
+        <div class="slide">
+            <h2>Thursday, January 29</h2>
+            <p class="accent" style="font-size: 1.1rem;">TRAVEL DAY</p>
+            <div class="card">
+                <p><strong>3:30 PM:</strong> Early release from school → drive to MIA</p>
+                <p><strong>5:45 PM:</strong> Depart MIA on American Airlines</p>
+                <p><strong>8:15 PM:</strong> Arrive AVL → pick up rental car</p>
+                <p><strong>8:30 PM:</strong> Free shuttle to Wingate hotel (5 min)</p>
+                <p><strong>✓ Sleep at airport hotel</strong></p>
+            </div>
+            <div class="page-number">Slide 10 of 18</div>
+        </div>
+
+        <div class="slide">
+            <h2>Friday, January 31</h2>
+            <p class="accent" style="font-size: 1.1rem;">FIRST SKI DAY</p>
+            <div class="card">
+                <p><strong>8:00 AM:</strong> Free breakfast at airport hotel</p>
+                <p><strong>9:00 AM:</strong> Pick up AWD SUV rental (snow tires)</p>
+                <p><strong>10:00 AM:</strong> Daylight drive to Beech Mountain (1.5 hrs)</p>
+                <p><strong>11:30 AM:</strong> Arrive Best Western, check in, pick up ski rentals</p>
+                <p><strong>1:00 PM:</strong> GROUP BEGINNER LESSON (all 3)</p>
+                <p><strong>3:30 PM:</strong> Lunch + practice on green runs</p>
+                <p><strong>6:00 PM:</strong> Dinner in Banner Elk</p>
+            </div>
+            <img src="https://agi-prod-file-upload-public-main-use1.s3.amazonaws.com/4f69ac36-93e8-4b10-aa3c-cb55e3dd41c3" alt="Gemini ski adventure" style="width: 100%; max-width: 280px; border-radius: 8px; margin-top: 1rem;">
+            <div class="page-number">Slide 11 of 18</div>
+        </div>
+
+        <div class="slide">
+            <h2>Saturday, February 1</h2>
+            <p class="accent" style="font-size: 1.1rem;">FULL SKI DAY + TUBING</p>
+            <div class="card">
+                <p><strong>8:00 AM:</strong> Breakfast at hotel</p>
+                <p><strong>9:00 AM–3:30 PM:</strong> FULL SKI DAY (green/easy blue runs)</p>
+                <p><strong>4:00 PM:</strong> Return to hotel, rest & shower</p>
+                <p><strong>6:00–8:00 PM:</strong> SNOW TUBING at Hawksnest</p>
+                <p><strong>8:30 PM:</strong> Dinner at hotel or Banner Elk</p>
+            </div>
+            <div class="page-number">Slide 12 of 18</div>
+        </div>
+
+        <div class="slide">
+            <h2>Sunday, February 2 & Monday, February 3</h2>
+            <p class="accent" style="font-size: 1.1rem;">RETURN HOME + DAY OFF</p>
+            <div class="card">
+                <h4>Sunday Return</h4>
+                <p><strong>8:30 AM:</strong> Breakfast & pack up</p>
+                <p><strong>9:30 AM–12:00 PM:</strong> Half-day ski (favorite runs)</p>
+                <p><strong>12:30 PM:</strong> Return ski rentals</p>
+                <p><strong>1:00–2:30 PM:</strong> Drive to Asheville airport</p>
+                <p><strong>4:30 PM:</strong> Depart AVL on American Airlines</p>
+                <p><strong>7:00 PM:</strong> Arrive MIA, drive home</p>
+            </div>
+            <div class="card">
+                <h4>Monday Off 🎉</h4>
+                <p><strong>No school, no work!</strong> Sleep in, recover, share stories</p>
+            </div>
+            <div class="page-number">Slide 13 of 18</div>
+        </div>
+
+        <!-- Slide 14: Booking Links -->
+        <div class="slide">
+            <h2>Booking Checklist</h2>
+            <ul>
+                <li>☐ <a href="https://www.aa.com/en-us/flights-from-miami-to-asheville" target="_blank">American Airlines flights</a> (Jan 29 & Feb 2)</li>
+                <li>☐ <a href="https://www.tripadvisor.com/Hotel_Review-g49049-d235368-Reviews-Wingate_by_Wyndham_Fletcher_at_Asheville_Airport-Fletcher_North_Carolina.html" target="_blank">Wingate airport hotel</a> (Thu night)</li>
+                <li>☐ <a href="https://www.bannerelk.com/members/best-western-mountain-lodge/" target="_blank">Best Western Mountain Lodge</a> (3 nights, Fri–Sun)</li>
+                <li>☐ <a href="https://www.beechmountainresort.com" target="_blank">Ski rentals</a> (skis, boots, helmets)</li>
+                <li>☐ <a href="https://www.beechmountainresort.com/lessons/ski-school/" target="_blank">Ski lessons</a> (Fri AM group)</li>
+                <li>☐ <a href="https://www.beechmountainresort.com/winter-slope-tickets/" target="_blank">Lift tickets</a> (multi-day)</li>
+                <li>☐ <a href="https://hawksnesttubing.com" target="_blank">Hawksnest tubing</a> (Sat PM)</li>
+                <li>☐ AWD SUV rental car at AVL</li>
+                <li>☐ Pack: winter gear, layers, sunscreen</li>
+            </ul>
+            <div class="page-number">Slide 14 of 18</div>
+        </div>
+
+        <!-- Slide 15: Key Tips -->
+        <div class="slide">
+            <h2>Key Tips for Success</h2>
+            <div class="card">
+                <h4>Safety First</h4>
+                <p class="secondary"><span class="emoji">🎿</span> Helmets non-negotiable | Double following distance on snow roads | Check DriveNC.gov before driving</p>
+            </div>
+            <div class="card">
+                <h4>Pack Smart</h4>
+                <p class="secondary"><span class="emoji">🧥</span> Base layer + fleece + jacket + snow pants | Hats, gloves, sunscreen SPF 50+</p>
+            </div>
+            <div class="card">
+                <h4>Pace Yourself</h4>
+                <p class="secondary"><span class="emoji">⏰</span> Rest, hydrate, eat | Fatigue = injuries | Take breaks</p>
+            </div>
+            <div class="card">
+                <h4>Book Ahead</h4>
+                <p class="secondary"><span class="emoji">📋</span> All flights, hotels, lessons, tubing—get confirmations locked in!</p>
+            </div>
+            <div class="page-number">Slide 15 of 18</div>
+        </div>
+
+        <!-- Slide 16: Restaurant Reviews -->
+        <div class="slide">
+            <h2>Restaurants & Reviews</h2>
+            <div class="card">
+                <h4>Banner Elk Dining</h4>
+                <p><a href="https://www.yelp.com/search?find_desc=Restaurant&find_loc=Banner+Elk%2C+NC" target="_blank">Browse Yelp for Banner Elk restaurants</a></p>
+                <p class="secondary">Popular: Stonewalls (steaks), Town Tavern (pub food), local diners</p>
+            </div>
+            <div class="card">
+                <h4>On-Site Dining</h4>
+                <p class="secondary"><strong>Beech Mountain Inns restaurants</strong> are convenient after skiing for dinner without driving</p>
+            </div>
+            <div class="page-number">Slide 16 of 18</div>
+        </div>
+
+        <!-- Slide 17: Winter Driving Tips -->
+        <div class="slide">
+            <h2>First-Time Snow Driving: Tips</h2>
+            <div class="card">
+                <h4>Vehicle</h4>
+                <p class="secondary">Rent AWD/4WD SUV with snow tires | Carry tire chains (~$30) | Emergency kit: blanket, water, flashlight, shovel</p>
+            </div>
+            <div class="card">
+                <h4>Driving</h4>
+                <p class="secondary">Slow & smooth: no sudden acceleration/braking/turns | Double following distance | Downhill: low gear, gentle braking | Uphill: steady gas</p>
+            </div>
+            <div class="card">
+                <h4>Check Conditions</h4>
+                <p class="secondary">Before leaving AVL, call 511 or visit <a href="https://www.drivenc.gov" target="_blank">DriveNC.gov</a> for real-time road updates</p>
+            </div>
+            <div class="page-number">Slide 17 of 18</div>
+        </div>
+
+        <!-- Slide 18: Let's Go! -->
+        <div class="slide title-slide">
+            <h1>LET'S GO SKI! ⛷️</h1>
+            <h2 style="color: #f1f5f9; margin-bottom: 1.5rem;">Book Beech Mountain Now</h2>
+            <p style="font-size: 1.1rem; margin-bottom: 1rem;">Total estimated cost: <span class="highlight">$4,901</span></p>
+            <p class="secondary">All flights, lodging, ski time, lessons & tubing included</p>
+            <p class="secondary" style="margin-top: 2rem; font-style: italic;">Questions? Check the booking links above or call your airline/hotel directly</p>
+            <div class="page-number">Slide 18 of 18</div>
+        </div>
+
+        <!-- Footer -->
+        <div style="text-align: center; padding: 2rem 1rem; color: #94a3b8; border-top: 1px solid #334155; margin-top: 2rem;">
+            <p>Beech Mountain Family Ski Trip | January 29 – February 2, 2026</p>
+            <p style="font-size: 0.9rem;">Share this with your wife! All links are clickable on mobile.</p>
+        </div>
+
+    </div>
+</body>
+</html>
